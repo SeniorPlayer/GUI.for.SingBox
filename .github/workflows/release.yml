@@ -157,7 +157,7 @@ jobs:
           path: build/bin/*.zip
 
   Release:
-    needs: [Build-Windows, Build-macOS, Build-Linux]
+    needs: [Build-macOS]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v8
